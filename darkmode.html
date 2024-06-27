@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="darkmode.css">
+</head>
+<body>
+    <div class="settings-page">
+        <!-- Language selector -->
+        <div class="header">
+            <img src="gear-icon.png" alt="Settings Icon" class="icon">
+            <h1>Settings</h1>
+        </div>
+        <div class="content">
+            <section class="account-settings">
+                <h2>Account Settings</h2>
+                <div class="setting-item">
+                    <a href="changename.html" target="_blank">Change Name</a>
+                    <span class="arrow">&gt;</span>
+                </div>
+                <div class="setting-item">
+                    <a href="#">Languages</a>
+                    <span class="arrow"></span>
+                    <select id="language-select" onchange="changeLanguage()">
+                        <option value="en" selected>English</option>
+                        <option value="th">ภาษาไทย</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <a href="https://example.com/fluke" target="_blank">Fluke</a>
+                    <span class="add">+</span>
+                </div>
+                <div class="setting-item">
+                    <a href="https://example.com/tong" target="_blank">Dark Mode</a>
+                    <label class="switch">
+                        <input type="checkbox" id="dark-mode-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <a href="https://example.com/baifern" target="_blank">Baifern</a>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </section>
+            <section class="more">
+                <h2>More</h2>
+                <div class="setting-item">
+                    <a href="https://example.com/aboutus" target="_blank">About us</a>
+                    <span class="arrow">&gt;</span>
+                </div>
+                <div class="setting-item">
+                    <a href="https://example.com/privacypolicy" target="_blank">Privacy policy</a>
+                    <span class="arrow">&gt;</span>
+                </div>
+            </section>
+        </div>
+        <div class="buttons">
+            <button class="btn settings" id="people-btn">
+                <img src="two-people.png" alt="Settings">
+            </button>
+            <button class="btn home" id="home-btn">
+                <img src="home-icon.png" alt="Home">
+            </button>
+            <button class="btn call" id="map-btn">
+                <img src="map-logo.png" alt="Call">
+            </button>
+        </div>
+    </div>
+    <script src="setting.js"></script>
+</body>
+</html>

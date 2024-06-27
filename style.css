@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 360px;
+  height: 640px;
+  border: 2px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+.settings-btn {
+  background-color: lightgreen;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-btn img {
+  width: 50px;
+  height: 50px;
+}
+
+.settings-btn:hover {
+  background-color: #28b222;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.time-text {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+  bottom: 100px;
+}
+
+.help-btn {
+  width: 100px;
+  height: 100px;
+  background-color: #FF7043;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 100px; /* Center text vertically */
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+}
+.help-btn:hover{
+  background-color: yellow;
+  color: black;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  width: 33%;
+  padding: 20px 0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Remove underline */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn img {
+  width: 40px;
+  height: 40px;
+}
+
+.settings {
+  background-color: lightgreen;
+}
+
+.settings:hover {
+  background-color: #999;
+}
+
+.home {
+  background-color: lightgreen;
+}
+
+.home:hover {
+  background-color: #cc0000;
+}
+
+.call {
+  background-color: lightgreen;
+}
+
+.call:hover {
+  background-color: #ccbb00;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}

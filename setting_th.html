@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าการตั้งค่า</title>
+    <link rel="stylesheet" href="setting.css">
+    <link rel="stylesheet" href="darkmode.css">
+</head>
+<body>
+    <div class="settings-page">
+        
+        
+
+        <div class="header">
+            <img src="gear-icon.png" alt="Settings Icon" class="icon">
+            <h1>การตั้งค่า</h1>
+        </div>
+        <div class="content">
+            <section class="account-settings">
+                <h2>การตั้งค่าบัญชี</h2>
+                <div class="setting-item">
+                    <a href="changename.html" target="_blank">เปลี่ยนชื่อ</a>
+                    <span class="arrow">&gt;</span>
+                </div>
+                <div class="setting-item">
+
+                    <a href="#">เปลี่ยนภาษา</a>
+                    <span class="arrow"></span>
+                    <select id="language-select" onchange="changeLanguage()">
+                        <option value="en">English</option>
+                        <option value="th" selected>ภาษาไทย</option>
+                    </select>
+                    
+                </div>
+                
+                <div class="setting-item">
+                    <a href="#" target="_blank">Dark Mode</a>
+                    <label class="switch">
+                        <input type="checkbox" id="dark-mode-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                
+            </section>
+            <section class="more">
+                <h2>เพิ่มเติม</h2>
+                <div class="setting-item">
+                    <a href="aboutus.html" target="_blank">เกี่ยวกับเรา</a>
+                    <span class="arrow">&gt;</span>
+                </div>
+                <div class="setting-item">
+                    <a href="license.html" target="_blank">นโยบายความเป็นส่วนตัว</a>
+                    <span class="arrow">&gt;</span>
+                </div>
+            </section>
+        </div>
+        <div class="buttons">
+            <button class="btn settings" id="people-btn">
+                <img src="two-people.png" alt="Settings">
+            </button>
+            <button class="btn home" id="home-btn">
+                <img src="home-icon.png" alt="Home">
+            </button>
+            <button class="btn call" id="map-btn">
+                <img src="map-logo.png" alt="Call">
+            </button>
+        </div>
+    </div>
+    <script src="setting.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+
+.settings-page {
+    width: 360px;
+    height: 640px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.account-settings, .more {
+    margin-bottom: 20px;
+}
+
+.account-settings h2, .more h2 {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    
+}
+
+.setting-item span {
+    font-size: 16px;
+}
+
+.arrow, .add {
+    color: #888;
+    font-size: 16px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(16px);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    width: 33%;
+    padding: 20px 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #28b222;
+}
+
+.btn:hover {
+    background-color: #1e7a18;
+}
+
+.btn img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo {
+    position: absolute;
+    top: 450px; /* Adjust top position as needed */
+    right: 630px; /* Adjust right position as needed */
+    z-index: 2; /* Ensure it's above the map (z-index of .map is 1) */
+}
+  
+.logo-img {
+    width: 80px; /* Adjust width as per your logo size */
+    height: auto;
+}
+/* General link styles */
+.setting-item a {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Hover effect for links */
+.setting-item a:hover {
+    background-color: #f0f0f0;
+    color: #007BFF;
+}
+
+
+.setting-item .arrow, .setting-item .add {
+    color: #007BFF;
+    font-size: 20px;
+    float: right;
+}
+
+
+.setting-item .switch {
+    float: right;
+}
+
+
+.setting-item {
+    margin: 5px 0;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header .icon {
+    margin-right: 10px;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 150px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.language-selector{
+    position: relative;
+    top: 250px;
+    right: -230px;
+}
+.setting-btn{
+    background-color: green;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 360px;
+    height: 640px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.profile:last-child {
+    border-bottom: none;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.role {
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #00FF00;
+    padding: 10px;
+}
+
+.btn {
+    width: 33%;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.settings {
+    background-color: #ccc;
+}
+
+.settings:hover {
+    background-color: #999;
+}
+
+.home {
+    background-color: #ff4444;
+}
+
+.home:hover {
+    background-color: #cc0000;
+}
+
+.call {
+    background-color: #ffdd44;
+}
+
+.call:hover {
+    background-color: #ccbb00;
+}
+
+.btn img {
+    width: 40px;
+    height: 40px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="fluke_pro.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="info">
+                <div class="name">นาย พงศภัค จงสมสุข 010</div>
+                <div class="role">หน้าที่ : สร้าง App</div>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="toto_pro.JPG" alt="Profile Picture" class="profile-pic">
+            <div class="info">
+                <div class="name">ฉัตรณเรศ เหมือนเชตุ 011</div>
+                <div class="role">หน้าที่ : ออกแบบ App</div>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="tong_pro.JPG" alt="Profile Picture" class="profile-pic">
+            <div class="info">
+                <div class="name">ศิลาลักษ์ ศรทอง 012</div>
+                <div class="role">หน้าที่ : ทำสไลด์ , หาข้อมูล</div>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="koi_pro.JPG" alt="Profile Picture" class="profile-pic">
+            <div class="info">
+                <div class="name">นิภาพร ผาสกุล 009</div>
+                <div class="role">หน้าที่ : ทำสไลด์ , หาข้อมูล</div>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="fern_pro.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="info">
+                <div class="name">พิชชาพร พูลภิญโญ 025</div>
+                <div class="role">หน้าที่ : ทำสไลด์ , หาข้อมูล</div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn settings" id="people-btn">
+                <img src="two-people.png" alt="People">
+            </button>
+            <button class="btn home" id="home-btn">
+                <img src="home-icon.png" alt="Home">
+            </button>
+            <button class="btn call" id="map-btn">
+                <img src="map-logo.png" alt="Map">
+            </button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('people-btn').addEventListener('click', function() {
+  window.location.href = 'chat.html'; 
+});
+
+document.getElementById('home-btn').addEventListener('click', function() {
+  window.location.href = 'index.html'; 
+});
+
+document.getElementById('map-btn').addEventListener('click', function() {
+  window.location.href = 'map.html';
+});
+    </script>
+</body>
+</html>

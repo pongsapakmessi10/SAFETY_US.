@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma to HTML</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; 
+        }
+
+        .container {
+            width: 360px;
+            height: 640px;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: white; 
+        }
+
+        .header {
+            background-color: #00FF00;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ccc;
+        }
+
+        .username {
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .message-area {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+        }
+
+        .input-area {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+           
+            background-color: #00FF00;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .buttons {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  width: 33%;
+  padding: 20px 0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn img {
+  width: 40px;
+  height: 40px;
+}
+
+.settings {
+  background-color: lightgreen;
+}
+
+.settings:hover {
+  background-color: #999;
+}
+
+.home {
+  background-color: lightgreen;
+}
+
+.home:hover {
+  background-color: #cc0000;
+}
+
+.call {
+  background-color: lightgreen;
+}
+
+.call:hover {
+  background-color: #ccbb00;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="profile-pic" src="fern_pro.jpg" alt="">
+            <div class="username">Baifern</div>
+        </div>
+        <div class="message-area" id="messageArea"></div>
+        <div class="input-area">
+            <input type="text" id="textInput" placeholder="Text...">
+            <button id="sendButton">Send</button>
+        </div>
+        <div class="buttons">
+            <button class="btn settings" id="people-btn">
+                <img src="two-people.png" alt="Settings">
+            </button>
+            <button class="btn home" id="home-btn">
+                <img src="home-icon.png" alt="Home">
+            </button>
+            <button class="btn call" id="map-btn">
+                <img src="map-logo.png" alt="Call">
+            </button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('people-btn').addEventListener('click', function() {
+        window.location.href = 'chat.html'; 
+        });
+        document.getElementById('home-btn').addEventListener('click', function() {
+        window.location.href = 'index.html'; 
+        });
+        document.getElementById('map-btn').addEventListener('click', function() {
+        window.location.href = 'map.html'; 
+        });
+        document.getElementById('sendButton').addEventListener('click', function() {
+            const textInput = document.getElementById('textInput');
+            const messageArea = document.getElementById('messageArea');
+
+            if (textInput.value.trim() !== "") {
+                const newMessage = document.createElement('div');
+                newMessage.textContent = textInput.value;
+                messageArea.appendChild(newMessage);
+                textInput.value = "";
+            }
+        });
+    </script>
+</body>
+</html>

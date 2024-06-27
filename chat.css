@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 360px;
+    height: 640px;
+    border: 2px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgreen;
+    padding: 10px;
+  }
+  
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .settings-btn {
+    background-color: lightgreen;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .settings-btn img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .settings:hover {
+  background-color: #999;
+}
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .user-btn {
+    width: 90%;
+    height: 60px;
+    margin: 10px 0;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .user-btn:focus {
+    outline: none;
+  }
+  
+  .user-btn:hover {
+    background-color: #ddd;
+  }
+  
+  .add-user-btn {
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .add-user-btn img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightgreen;
+  }
+  
+  .btn {
+    width: 33%;
+    padding: 20px 0;
+    border: none;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  #people-btn {
+    background-color: lightgreen;
+  }
+  
+  #home-btn {
+    background-color: lightgreen;
+  }
+  
+  #map-btn {
+    background-color: lightgreen;
+  }
+  .settings-btn:hover{
+    background-color: #28b222;
+  }
+  #map-btn:hover {
+    background-color: #28b222;
+  }
+  #home-btn:hover {
+    background-color: #28b222;
+  }
+  #people-btn:hover {
+    background-color: #28b222;
+  }
+  
